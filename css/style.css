@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.header{
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    background:#FFFFFF;
+}
+.logo{
+    float: left;
+}
+.logo h3{
+    font-size: 20px;
+    color: aqua;
+    letter-spacing: 2px;
+}
+.nav{
+    float: right;
+}
+.nav a{
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.banner{
+    width: 100%;
+    height: 350px;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about{
+    width: 1200px;
+    margin: 200px auto 20px auto;
+    text-align: center;
+}
+.vedio{
+    width: 45%;
+    height: auto;
+    margin: 50px auto 20px auto;
+    text-align: center;
+}
+.lav{
+    background: #f2f2f2;
+}
