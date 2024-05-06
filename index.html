@@ -3,28 +3,128 @@
     <head>
         <meta.charset="utf-8">
         <title>视频展示</title>
+        <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4534635_az4cmb7y0mv.css">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            ul{
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+            }
+            ul li{
+                list-style: none;
+    margin: 0 25px;
+    }
+    ul li a .i{
+    font-size: 40px;
+    color: #333;
+    line-height: 80px;
+    padding-right: 14px;
+    transition: .5s;
+    }
+ul li a span{
+    position: absolute;
+    top: 30px;
+    color: #333;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+ul li a {
+    text-decoration: none;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skewX(25deg);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background-color: #b1b1b1;
+    transform: rotate(0deg) skewY(-45deg);
+    transition: 5s;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background-color: #b1b1b1;
+    transform: rotate(0deg) skewX(-45deg);
+    transition: 5s;
+}
+ul li:hover a{
+    background-color: #dd4b39;
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+ul li:hover .i, ul li:hover span{
+    color: #fff;
+}
+ul li:hover a::before{
+    background-color: #b33a2b;
+}
+ul li:hover a::after{
+    background-color: #e66a5a;
+}
+        </style>
     </head>
-    <body>
+    <body style="background-color: #CCFFCC"> 
         <!--顶部-->
         <div class="header">
             <div class="logo">
                 <h3>我的网页</h3>
             </div>  
-            <div class="nav">
-                <a href="index.html">首页</a>
-                <a href="zuoye.html">作品</a>
-                <a href="news.html">日记</a>
-                <a href="https:www.baidu.com">关于我</a>
-                <a href="communication.html">联系我</a>
-            </div>
         </div>
-        <!--大图-->
-        <div class="banner">
+         <!--大图-->
+         <div class="banner">
             <img src="img/轨道.jpg" alt="">
-        </div>  
-        <div class="about">
-             <p>关于我</p>
         </div>
+
+         <!-- 图标 -->
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="iconfont icon-shouye i"></i>
+                    <span> - 首页 </span>
+                </a>
+            </li>
+            <li>
+                <a href="zuoye.html">
+                    <i class="iconfont icon-zuopinzhuzuo i"></i>
+                    <span> - 作品 </span>
+                </a>
+            </li>
+            <li>
+                <a href="news.html">
+                    <i class="iconfont icon-icon_diary i"></i>
+                    <span> - 日记 </span>
+               </a>
+            </li>
+            <li>
+                <a href="https:www.biadu.com">
+                    <i class="iconfont icon-guanyu i"></i>
+                    <span> - 关于 </span>
+                </a>
+            </li>
+            <li>
+                <a href="communication.html">
+                    <i class="iconfont icon-lianxi i"></i>
+                    <span> - 联系 </span>
+                </a>
+            </li>
+        </ul>
     </body>
 </html>
