@@ -79,6 +79,31 @@ ul li:hover a::before{
 ul li:hover a::after{
     background-color: #e66a5a;
 }
+hi{
+   position: relative;
+   letter-spacing: 15px;
+   text-transform:uppercase;
+   text-align: center;
+   line-height: 0.7em;
+   text-align: center;
+   color：#0e3742；
+   line-height: 0.7em;
+   outline: none;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, #0008);
+   animation: animate Ss linear infinite;
+   }
+   @keyframes animate{
+       0%,21%,31%,51%,60%,80,92%{
+           color: #0e3742；
+       }
+       20%,30%,50%,60%,80%,90,92%{
+           color： #fff;
+           text-shadow:0 0 10px #03bcf4,
+                       0 0 20px #03bcf4， 
+                       0 0 40px #03bcf4，
+                       0 0 80px #03bcf4；
+       }
+   }
         </style>
     </head>
     <body style="background-color: #CCFFCC"> 
@@ -126,5 +151,6 @@ ul li:hover a::after{
                 </a>
             </li>
         </ul>
+        <h1>contenteditable="true">Hello world</h1>
     </body>
 </html>
