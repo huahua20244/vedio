@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.video-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;  /* 设定最大宽度，以适应不同设备 */
+}
+
+.video-details h3, .comments-section h4 {
+    color: #8d79ff; /* 轻松愉快的粉红色 */
+}
+
+button {
+    background-color: #9279ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* 调整适合移动设备的字体大小 */
+}
+
+button:hover {
+    background-color: #92f8ff;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.video-details p {
+    color: #666;
+}
+
+/* 媒体查询用于小屏幕设备 */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    button, textarea {
+        font-size: 14px; /* 在小屏幕上进一步减小字体大小 */
+    }
+}
