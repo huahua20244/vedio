@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #ffffff, #e3b6e7);  
     margin: 0;
     padding: 20px;
     display: flex;
@@ -47,5 +47,5 @@ body {
 }
 /* styles.css 文件内容 */
 body {
-    background: linear-gradient(to bottom, #ffffff, #e3b6e7);  /* 从白色到蓝色的渐变 */
+    background: linear-gradient(to bottom, #ffffff, #e3b6e7);  
 }

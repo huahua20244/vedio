@@ -25,6 +25,11 @@ body {
     font-size: 20px;
     color: aqua;
     letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 100px; 
+    height: auto;
 }
 
 .nav {
@@ -74,4 +79,19 @@ body {
     .logo h3, .nav a {
         font-size: 16px; 
     }
+}
+.log {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; 
+    height: auto;/* 根据实际需要调整Logo的尺寸 */
+}
+.music-control {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 32px; /* 或者根据你的图标大小调整 */
+    height: 32px;
 }

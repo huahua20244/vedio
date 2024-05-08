@@ -111,8 +111,26 @@ ul li:hover a::after{
     <body > 
         <!--顶部-->
         <div class="header">
+            <img src="img/log.png" alt="Logo" class="log">
             <div class="logo">
                 <h3>我的网页</h3>
+                <audio id="bgMusic" src="vedio/karnong.mp3" preload="auto" autoplay loop></audio>
+    <img id="musicIcon" src="img/yin.png" class="music-control" alt="Toggle Music" onclick="toggleMusic()">
+
+    <script>
+        var music = document.getElementById("bgMusic");
+        var musicIcon = document.getElementById("musicIcon");
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                musicIcon.src = "img/yin.png";
+            } else {
+                music.pause();
+                musicIcon.src = "img/jing.png";
+            }
+        }
+    </script>
             </div>  
         </div>
          <!--大图-->
