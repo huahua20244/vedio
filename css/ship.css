@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text{
+    text-align: center; 
+}
+
+.video-list {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.video-item {
+    text-decoration: none;
+    color: black;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-item h3 {
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* 媒体查询用于小屏幕设备，调整网格布局和字体大小 */
+@media (max-width: 768px) {
+    .video-list {
+        grid-template-columns: 1fr; /* 单列显示，更适合窄屏幕 */
+    }
+
+    .video-item h3 {
+        font-size: 16px; /* 减小标题字体大小 */
+    }
+
+    body {
+        padding: 10px; /* 减小页面边距 */
+    }
+}
