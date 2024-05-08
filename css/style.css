@@ -51,3 +51,17 @@
     background: #f2f2f2;
 }
 
+/* 媒体查询用于小屏幕设备，调整网格布局和字体大小 */
+@media (max-width: 768px) {
+    .video-list {
+        grid-template-columns: 1fr; /* 单列显示，更适合窄屏幕 */
+    }
+
+    .video-item h3 {
+        font-size: 16px; /* 减小标题字体大小 */
+    }
+
+    body {
+        padding: 10px; /* 减小页面边距 */
+    }
+}
