@@ -7,10 +7,6 @@ body {
     justify-content: center;
 }
 
-.about-text{
-    text-align: center; 
-}
-
 .video-list {
     width: 100%;
     max-width: 800px;
@@ -48,4 +44,8 @@ body {
     body {
         padding: 10px; /* 减小页面边距 */
     }
+}
+/* styles.css 文件内容 */
+body {
+    background: linear-gradient(to bottom, #ffffff, #e3b6e7);  /* 从白色到蓝色的渐变 */
 }
