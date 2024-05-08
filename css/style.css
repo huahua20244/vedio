@@ -79,5 +79,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px; /* 根据实际需要调整Logo的尺寸 */
+    width: 20px; 
+    hight: auto;/* 根据实际需要调整Logo的尺寸 */
 }
