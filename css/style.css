@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #b6dce7);
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    line-height: 3.125rem;
+    background: #fff;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h3 {
+    font-size: 20px;
+    color: aqua;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 3.125rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.banner {
+    width: 95%;
+    height: 21.875rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about, .vedio {
+    max-width: 1200px;
+    width: 95%;
+    margin: 12.5rem auto 1.25rem auto;
+    text-align: center;
+}
+
+.lav {
+    background: #f2f2f2;
+}
+
+.log {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.125rem;
+    height: auto;
+}
+
+.music-control {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header, .about, .vedio {
+        margin: 0 0.625rem;
+        padding: 0;
+        width: auto;
+    }
+
+    .nav a {
+        margin-left: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .banner {
+        height: 15rem;
+    }
+
+    .banner img {
+        object-fit: cover;
+    }
+
+    .music-control {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .nav a {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h3 {
+        font-size: 1rem;
+    }
+
+    .banner {
+        height: 12rem;
+    }
+
+    .banner img {
+        object-position: center;
+    }
+
+    .nav a {
+        font-size: 0.875rem;
+    }
+
+    .header {
+        padding: 1rem 0.5rem;
+    }
+
+    .music-control {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
