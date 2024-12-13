@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>视频展示</title>
+        <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4534635_az4cmb7y0mv.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body {
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            h1 {
+                position: relative;
+                letter-spacing: 15px;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 0.7em;
+                color: #0e3742;
+                outline: none;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+                animation: animate 5s linear infinite;
+            }
+            @keyframes animate {
+                0%, 21%, 31%, 51%, 60%, 80%, 92% {
+                    color: #0e3742;
+                }
+                20%, 30%, 50%, 60%, 80%, 90%, 100% {
+                    color: #fff;
+                    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4;
+                }
+            }
+            .music-control {
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            ul {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+            }
+            ul li {
+                list-style: none;
+                margin: 0 25px;
+            }
+            ul li a .i {
+                font-size: 40px;
+                color: #333;
+                line-height: 80px;
+                padding-right: 14px;
+                transition: .5s;
+            }
+            ul li a span {
+                position: absolute;
+                top: 30px;
+                color: #333;
+                letter-spacing: 2px;
+                transition: .5s;
+            }
+            ul li a {
+                text-decoration: none;
+                display: block;
+                width: 210px;
+                height: 80px;
+                background-color: #fff;
+                text-align: left;
+                padding-left: 20px;
+                transform: rotate(-30deg) skewX(25deg);
+                box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+                transition: .5s;
+            }
+            ul li a::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: -20px;
+                height: 100%;
+                width: 20px;
+                background-color: #b1b1b1;
+                transform: rotate(0deg) skewY(-45deg);
+                transition: 5s;
+            }
+            ul li a::after {
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: -10px;
+                height: 20px;
+                width: 100%;
+                background-color: #b1b1b1;
+                transform: rotate(0deg) skewX(-45deg);
+                transition: 5s;
+            }
+            ul li:hover a {
+                background-color: #16d0d0;
+                transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+                box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+            }
+            ul li:hover .i, ul li:hover span {
+                color: #fff;
+            }
+            ul li:hover a::before {
+                background-color: #57eded;
+            }
+            ul li:hover a::after {
+                background-color: #30cfd0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="img/头像3.png" alt="Logo" class="log">
+            <div class="logo">
+                <audio id="bgMusic" src="vedio/karnong.mp3" autoplay muted loop></audio>
+                <img id="musicIcon" src="img/yin.png" class="music-control" alt="Toggle Music" onclick="toggleMusic()">
+            </div>
+        </header>
+        <script>
+            const music = document.getElementById("bgMusic");
+            const musicIcon = document.getElementById("musicIcon");
+            
+            music.muted = true;
+        
+            function toggleMusic() {
+                if (music.paused) {
+                    music.muted = false;
+                    music.play();
+                    musicIcon.src = "img/yin.png";
+                } else {
+                    music.pause();
+                    musicIcon.src = "img/jing.png";
+                }
+            }
+        </script>
+
+        <div class="banner">
+            <img src="img/背景.jpeg" alt="banner image">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="iconfont icon-shouye i"></i><span>首页</span></a></li>
+                <li><a href="resummer.html"><i class="iconfont icon-lianxi i"></i><span>技能</span></a></li>
+                <li><a href="works.html"><i class="iconfont icon-zuopinzhuzuo i"></i><span>作品</span></a></li>
+                <li><a href="news.html"><i class="iconfont icon-icon_diary i"></i><span>日记</span></a></li>
+                <li><a href="https://www.baidu.com"><i class="iconfont icon-guanyu i"></i><span>关于</span></a></li>
+            </ul>
+        </nav>
+        <div>
+        <h1 contenteditable="true">个人网站</h1>
+        </div>
+    </body>
+</html>
+<!--
+                                                                         _oo0oo_
+                                                                        o8888888o
+                                                                        88" . "88
+                                                                        (| -_- |)
+                                                                        0\  =  /0
+                                                                      ___/`---'\___
+                                                                    .' \\|     |// '.
+                                                                   / \\|||  :  |||// \
+                                                                  / _||||| -:- |||||- \
+                                                                 |   | \\\  -  /// |   |
+                                                                 | \_|  ''\---/''  |_/ |
+                                                                 \  .-\__  '-'  ___/-. /
+                                                               ___'. .'  /--.--\  `. .'___
+                                                            ."" '<  `.___\_<|>_/___.' >' "".
+                                                          | | :   `- \`.;`\ _ /`;.`/ - ` : | |
+                                                           \  \ `_.   \_ __\ /__ _/   .-` /  /
+                                                            `-.____`.___ \_____/___.-`___.-' 
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
+
+                                             "....................佛祖开光       永无BUG..................."
+                                 "______________________________________项目已启动______________________________________"
+-->
